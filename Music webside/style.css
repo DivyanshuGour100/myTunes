@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior:smooth;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow: 8px 8px 8px black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:blueviolet;
+    color: white;
+    height: 67px;
+   
+}
+
+.logo{
+    display:flex ;
+    margin-left: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing:1.5px;
+}
+
+.typewriter{
+    position: relative;
+    
+}
+
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0px;
+    color: white;
+    background-color: blueviolet;
+    width:100%;
+    animation:typing 3s alternate infinite;
+}
+
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+
+}
+
+
+
+
+
+
+
+
+nav ul{
+    display: flex;
+    text-align: center;
+    gap: 35px;
+    text-decoration: none;
+    list-style: none;
+    margin-right:5%;
+    padding: 5%;
+}
+
+button{
+    padding: 10px 15px;
+    transition: 0.2s ease-in-out;
+}
+
+button :hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight:800;
+    text-decoration: underline;
+    
+}
+
+.hero-section{
+    background-image: url(hero_image.png);
+    height: 100vh;
+    display: grid;
+    place-items:center;
+}
+.container{
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.container h1{
+    font-size:94px;
+    font-weight:bolder;
+}
+
+.container h3{
+    font-size: 25px;
+}
+
+.container p{
+    max-width: 920px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(196, 190, 190);
+}
+
+.music-section{
+    padding-top: 4%;
+    background-color:rgb(72, 8, 145);
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.music-section .container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+.container-2 h4{
+    max-width: 1080px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    letter-spacing:1.5px;
+}
+
+.iphone-ipad{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+  background-color: green;    
+  transition: 0.4s;
+}
+
+.About-music-Containar{
+    align-items: center;
+    margin-top: 445px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.About-music-Containar p{
+    margin-top:3%;
+    max-width: 1250px;
+    margin-left:5%;
+    margin-bottom: 2%;
+}
+
+.mac-png{
+    display: flex;
+    height: 560px;
+    width: 690px;
+    margin-left:15%;
+    margin-top:2%;
+}
+.blue-btn{
+    background-color: blue;
+}
+
+.blue-btn:hover{
+    background-color: blueviolet;
+}
+
+.video-section{
+    background-image: url(video.png);
+    display: grid;
+    place-items:center;
+    min-height:800px;
+    color: white;
+    text-align: center;
+}
+
+.video-section .video-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top:-200px;
+}
+
+.giftcard-Containor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    padding:9%;
+}
+
+.gift_card-text{
+    display: grid;
+    justify-content: space-between;
+    gap:25px;
+}
+
+.gift_card-text p{
+    max-width: 850px;
+    font-size: 14px;
+    color: gray;
+}
+
+.btn-Redeem{
+    width:100px;
+    height:37px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(16, 16, 104);
+    border-radius:0px;
+}
+
+
+
+footer{
+    display: flex;
+    color:white;
+    background-color:rgb(2, 2, 53);
+    align-items: center;
+    justify-content: space-between;
+    padding-left:8%;
+    padding-right:8%;
+    padding-top:1%;
+    padding-bottom: 2%;
+    
+    
+}
+.footer-conte{
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    cursor: pointer;
+}
+
+footer h1{
+    font-size:22px;
+    color: white;
+    
+}
+
+footer h3{
+    font-size:15px;
+    font-weight: lighter;
+}
+
+.footer-conte-2{
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    cursor: pointer;
+}
+
+
+.footer-conte-3{
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    cursor: pointer;
+}
+.footer-conte-4{
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    cursor: pointer;
+}
+
+.last{
+    display: flex;
+    color: black;
+    background-color: white;
+    width:100%;
+    margin-left:8%;
+    padding: 10px;
+}
+
+.hero-section,
+.video-section{
+     position: relative;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
